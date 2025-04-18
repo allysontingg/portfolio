@@ -1,19 +1,34 @@
 :root {
-  --color-accent: oklch(0.17 0.0395 132.22);
+  --color-accent: oklch(65% 50% 0);
   accent-color: var(--color-accent);
+  color-scheme: auto;
+}
+
+/* color scheme switcher */
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+  font-family: inherit;
+
+  select {
+    font: inherit;
+  }
 }
 
 body {
+
     /* Set line height to 1.5 times the font size
          and use the OS’s UI font as the website font
        */
-    font: 100%/1.5 system-ui;
+    font: 100%/1.5 georgia;
     
     /* Set a maximum width of 100 characters for the text */
     max-width: 88ch;
     margin-inline: auto;
     padding: 1rem;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
 
     ul {
       display: contents;
@@ -22,11 +37,14 @@ body {
     };
     
     nav {
+      --border-color: oklch(50% 10% 200 / 40%);
+      
       display: flex;
       margin-bottom: 0.5em;
       border-bottom-width: 1px;
       border-bottom-style: solid;
-      border-bottom-color: oklch(80% 3% 200);
+
+      border-bottom-color: var(--border-color);
       /* padding: 0.5em; */
 
       a {
@@ -48,11 +66,12 @@ body {
         border-bottom: 0.4em solid var(--color-accent);
         padding-bottom: 0.1em;
         margin-bottom: 0em;
-        background-color: oklch(0.17 0.0395 132.22 / 50%);
+        /* background-color: oklch(0.17 0.0395 132.22 / 50%); */
+        background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
       }
     }
 
-    /* form {
+    form {
       input, textarea, button {
         font: inherit;
         display: block;
@@ -67,7 +86,8 @@ body {
         margin-block: 1em 0.5em;
       }
 
-    } */
+    }
+
     form {
       display: grid;
       grid-template-columns: auto 1fr;

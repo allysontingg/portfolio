@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project 2 Report</title>
+    <style>
+      :root {
+        --color-neutral-95: hsl(220 10% 95%);
+        --color-neutral-90: hsl(220 10% 90%);
+        --color-neutral-80: hsl(220 10% 80%);
+        --color-neutral-70: hsl(220 10% 70%);
+        --color-neutral-60: hsl(220 10% 60%);
+        --color-neutral-50: hsl(220 10% 50%);
+        --color-neutral-40: hsl(220 10% 40%);
+        --color-neutral-30: hsl(220 10% 30%);
+        --color-neutral-20: hsl(220 10% 20%);
+        --color-neutral-10: hsl(220 10% 10%);
+      }
+
+      html {
+        font: 100%/1.5 system-ui;
+        counter-reset: figure;
+        background: var(--color-neutral-95);
+        max-width: min(75vw, 80em);
+        margin: 0 auto;
+      }
+
+      /* Headings */
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        line-height: 1.1;
+        font-weight: 600;
+        text-wrap: balance;
+      }
+
+      h1,
+      h2 {
+        border-bottom: 1px solid var(--color-neutral-80);
+        padding-bottom: 0.2em;
+      }
+
+      h1 {
+        margin-block: 1em 0.5rem;
+        font-size: clamp(2.5em, 150% + 2vh + 2vw, 10vmin);
+        font-weight: 800;
+
+        small {
+          display: block;
+          width: fit-content;
+          padding: 0.2em 0.5em;
+          margin-inline: auto;
+          color: white;
+          background: var(--color-neutral-40);
+          font-size: 40%;
+          text-transform: uppercase;
+          white-space: nowrap;
+        }
+      }
+
+      h2 {
+        font-size: 180%;
+        color: var(--color-neutral-30);
+      }
+
+      h3 {
+        font-size: 130%;
+      }
+
+      /* Lists */
+
+      ul,
+      ol {
+        padding-inline-start: 2em;
+      }
+
+      li {
+        &::marker {
+          color: var(--color-neutral-40);
+        }
+
+        + li {
+          margin-top: 0.2em;
+        }
+      }
+
+      /* Sectioning elements */
+
+      header {
+        padding-block: 1em;
+        text-align: center;
+      }
+
+      main {
+        background: white;
+        color: var(--color-neutral-20);
+        border-radius: 1rem;
+        padding: 0.1rem 2rem;
+      }
+
+      /* Figures */
+
+      figure {
+        margin: 1em 0;
+        padding: 0.5rem;
+        margin-inline: -0.5em;
+        border: 1px solid var(--color-neutral-80);
+        box-shadow: 0 0.1em 0.2em var(--color-neutral-95);
+        text-align: center;
+        background: white;
+
+        > figcaption {
+          font: 500 75% var(--font-sans);
+          background: var(--color-neutral-95);
+          padding: 0.5rem;
+          margin: -0.5rem;
+          margin-top: 0.5rem;
+          counter-increment: figure;
+          text-align: left;
+
+          &::before {
+            content: 'Figure ' counter(figure) ': ';
+            font-weight: bold;
+            color: var(--color-neutral-40);
+          }
+
+          a:not(:hover, :focus, :active) {
+            color: inherit;
+            text-decoration: underline;
+            text-decoration-color: color-mix(
+              in lab,
+              currentColor,
+              transparent 70%
+            );
+          }
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <small>Assignment 4</small>
+        Persuasive or Deceptive Visualization?
+      </h1>
+
+      <p><strong>Allyson Ting</strong> — <em>a2ting@ucsd.edu</em></p>
+    </header>
+
+    <main>
+      <h2>The Overturning of Roe V. Wade Will Not Disrupt Abortion Trends Existing Since 2020</h2>
+
+      <section>
+        <h3>FOR the Proposition</h3>
+
+        <figure style="width: 100%; max-width: 800px; aspect-ratio: 3/2;">
+          <img src="FOR.jpg" alt="" style="width: 100%; height: 100%; object-fit: contain;"/>
+          <figcaption>States that have placed bans on abortion had already turned to out-of-state abortions, the trend only to continue.</figcaption>
+        </figure>
+
+        <p>Design Decisions and Rationale:</p>
+
+        <ul>
+          <li>Query for the 12 states that would place full bans on abortion after the overturning of Roe V. Wade (Score: -2)</li>
+          <ul>The states that went on to ban abortion had historically disapproved of it, so out-of-state abortions are disproportionally likely in this, limited sample of states. The visualization suggests that all states were included, but if this were true, only 50% of states had more out-of-state abortions in 2020.</ul>
+          <li>Arrow annotation and donut plot (Score: -0.5)</li>
+          <ul>Even though the percentage number is included, people will first look at the overwhelming amount of purple and come up with their own estimation of what that percentage number is. These design choices were made to make that number larger than its’ 83.3%. The arrow fills in the white space and having a donut plot makes the missing section seem much smaller than an entire missing slice, even though both would represent the leftover 16.7%.</ul>
+          <li>Simplicity of plotting 2 data points (Score: -1)</li>
+          <ul>The very limited amount of data used in this plot prevents readers from pondering anything or looking for any other trends within this plot that argue with its title. I had experimented with plots that expressed more information such as how many more out-of-state abortions there were, and techniques that did not seperate by state for example, but I found that keeping it simple was the best way to tell a quick, convincing story. I can imagine this plot reposted on someone’s instagram story, and all that is needed is a quick glance from viewers for this visualization to do its’ job of convincing the general eye that out-of-state abortions are much more common than in-state.</ul>
+        </ul>
+      </section>
+
+      <section>
+        <h3>AGAINST the Proposition</h3>
+
+        <figure style="width: 100%; max-width: 800px; aspect-ratio: 3/2;">
+          <img src="AGAINST.jpg" alt="" style="width: 100%; height: 100%; object-fit: contain;"/>
+          <figcaption>State legislation can control in-state abortion rates, shrinking the blood represented in red.</figcaption>
+        </figure>
+
+        <p>Design Decisions and Rationale:</p>
+
+        <ul>
+          <li>Red and grey bars (Score: 1)</li>
+          <ul>Red is a color often associated with blood and is also much more striking than grey. This leads red to be in the "front most layer" of the visualization, seemingly dripping from the top. This immediately brings the reader to the conclusion that there are much more in-state abortions than out-of-state. However, I do not think that this is deceiving because it does effectively communicate the data.</ul>
+          <li>Calculating averages as the sum of in-state abortions over the sum of state residents (Score: -2)</li>
+          <ul>The deception here goes hand in hand with the dangers of aggregate statistics. It is well known that the mean is sensitive to outliers, and I exploited that here. After binning, I only needed one state in each category to have a high in-state abortion rate to completely skew my data and make it seem as if there is no doubt that in-state abortions dominate. There is also some domain knowledge involved here. This method of aggregation does not take into consideration population of states or how politically acceptable abortion is in some states versus others.</ul>
+          <li>Categorical x-axis with number labels aka binning (Score: -1)</li>
+          <ul>The x-axis of this plot is categorical. You cannot draw a line of best fit through this plot or do any meaningful algebra with the x-axis labels, but it looks like you can. If you look closer, certain bins are missing because bins without any values got dropped. This method of binning by number of abortions leads to unequal numbers of states represented by each bar and the illusion of a continuous trend. This could lead readers to conclude that as the number of abortions grows, so does the proportion of in-state abortions which even further supports the claim that state legislation from the overturning of Roe V. Wade is key to preventing abortions and interrupting the current trend.</ul>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Final Reflection</h2>
+
+        <p>The structure of this project as well as the dataset reminded me of the many, deceiving visualizations that circulated the internet in 2022 with the overturning of Roe v. Wade. With both of my visualizations, I tried to mimic this and think about what people would glean if they were just scrolling through instagram stories and spent a couple seconds looking.</p>
+        <p>For me, there were many parts of this project that were difficult. Choosing what proposition to move forward with was pretty difficult for me, but after my proposition was chosen, the suprisingly, straightforward part was manipulating the data and adding elements to make my visualization agree with or go against this proposition. This just goes to show that you really can make the data say whatever you want it to say. Therefore, "ethical analysis" is all the more important.</p>
+        <p>I would now define ethical analysis as transparent analysis. Obviously, not everyone will be able to break down how a data visualization was made, but for someone with at least a little bit of expertise, they should be able to read the title, axes, and annotations, then get the same dataset and recreate the visualization. This recreatability is important beacuse it checks that nothing weird went on in the data manipulation process. If logical steps were followed in the creation of a visual, then it should be recreatable, so if it is recreatable, then logical steps were most likely followed.</p>
+        <p>When scoring my design choices from deceptive to earnest, I would just think about whether that choice emphasized part of the visualization that existed or created a hallucination. For example, the red bars in my second visualization could be seen as deceptive as they completely overshadow the grey bars, but the actual data shows that the red bars should be much bigger, so emphasizing them is not deceptive in my opinion. Other choices such as querying for only 12 states in my first visualization are for sure deceptive as it leads readers to hallucinate that all states have more out-of-state abortions, instead of just the states that are and have been historically against abortions and therefore now have bans.</p>
+      </section>
+    </main>
+  </body>
+</html>

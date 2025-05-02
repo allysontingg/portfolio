@@ -2,31 +2,31 @@
 	{
 		"title": "The Commoditization of Health",
 		"year": 2025,
-		"image": "/images/proj1.png",
+		"image":"https://vis-society.github.io/labs/2/images/empty.svg",
 		"description": "DSC106 project 1"
 	},
 	{
 		"title": "The Rise of Keto in the Early 21st Centruy",
 		"year": 2025,
-		"image": "/images/keto.jpg",
+		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
 		"description": "DSC80 final project"
 	},
 	{
 		"title": "Storm Water Management at UCSD",
 		"year": 2025,
-		"image": "/images/storm.jpg",
+		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
 		"description": "(SYN2 final project) A proposed solution to on campus flooding using green infrastructure techniques."
 	},
 	{
 		"title": "The Chinese Bull Market of 2024",
 		"year": 2024,
-		"image": "/images/bull.png",
+		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
 		"description": "Exploring the economic environment that lead the bull market in China in late 2024 and hypothesizing about the longevity of the current indicators."
 	},
 	{
 		"title": "Exploring Mei Foo: Personal Memories in a Space of Disapearance",
 		"year": 2024,
-		"image": "/images/hk.jpg",
+		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
 		"description": "A cultural tour for those interested in cultural studies, sociology, or urban development as well as tourists who want to explore Hong Kong at a deeper level. (https://com15927.wordpress.com/)"
 	},
 	{
@@ -39,13 +39,13 @@
 	{
 		"title": "WAAC Research Paper",
 		"year": 2024,
-		"image": "/images/waac.png",
+		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
 		"description": "A research paper exploring the Weighted Average Cost of Captial, including visualizations of the effects of the 5, different variables on the final metric."
 	},
 	{
 		"title": "Flamingo Math AI",
 		"year": 2024,
-		"image": "/images/outlier.jpg",
+		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
 		"description": "Worked under Outlier AI to develop a math AI."
 	},
 	{

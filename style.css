@@ -167,7 +167,9 @@ body {
 
   /* github stats styling */
   #profile-stats{
-    background-color: #f8f9fa;
+    /* set background color to a light grey for light mode and a dark grey for dark mode */
+    background-color: oklch(0.17 0.0395 132.22 / 5%);
+    /* background-color: #f8f9fa; */
     border: 1px solid #dee2e6;
     border-radius: 5px;
     padding: 1.5rem;
@@ -184,7 +186,7 @@ body {
   dt {
     grid-row: 1;
     font-weight: 600;
-    color: #495057;
+    /* color: #495057; */
     font-size: 0.875rem;
     text-align: center;
   }
@@ -194,7 +196,7 @@ body {
     margin: 0;
     font-size: 2rem;
     font-weight: 700;
-    color: #212529;
+    /* color: #212529; */
     text-align: center;
   }
   
@@ -206,3 +208,100 @@ body {
   .profile-stats-dropdown:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
   }
+
+/* d3 styling */
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+
+  overflow: visible;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+/* In your CSS file or style tag */
+.legend {
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(auto-fill, minmax(7.5em, 1fr));
+  gap: 0.8rem;
+  list-style: none;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  /* background-color: #f9f9f9; */
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.65rem;
+  min-width: 0; /* Helps with text overflow */
+}
+
+.swatch {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--color);
+  border-radius: 2px; /* Makes it circular - use 2px for rounded squares */
+  flex-shrink: 0;
+}
+
+.legend em {
+  font-style: normal;
+  color: #666;
+  margin-left: 0.5rem;
+}
+
+.searchBar {
+  /* Full width stretching */
+  width: 100%;
+  box-sizing: border-box; /* Includes padding in width calculation */
+  
+  /* Visual styling */
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 10px; /* Rounded ends */
+  background-color: oklch(0.17 0.0395 132.22 / 5%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  
+  /* Smooth transitions */
+  transition: all 0.3s ease;
+  
+  /* Focus state */
+  &:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    /* box-shadow: 0 2px 12px rgba(74, 144, 226, 0.3); */
+  }
+}
+
+&:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+  path {
+    transition: 300ms;
+  }
+  
+}
+.selected {
+  --color: var(--color-accent) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
+}
+
+path {
+  cursor: pointer;
+}
+

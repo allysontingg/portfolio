@@ -132,14 +132,34 @@ export async function fetchJSON(url) {
 
 export function renderProjects(projects, containerElement, headingLevel = 'h2') {
     containerElement.innerHTML = '';
+
+    const style = document.createElement('style');
+    style.textContent = `
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 5px;
+        }
+        .project-year {
+            color: #666;
+            font-size: 0.9em;
+        }
+    `;
+    document.head.appendChild(style);
+
     for (let i = 0; i < projects.length; i++) {
         const project = projects[i];
         const article = document.createElement('article');
         article.innerHTML = `
+        
         <${headingLevel}>${project.title}</${headingLevel}>
-        <img src="${project.image}" alt=${project.title}>
-        <p>${project.description}</p>
-`       ;
+            <img class="project-image" src="${project.image}" alt="${project.title}">
+            <span class="project-year">c. ${project.year}</span>
+            <p>${project.description}</p>
+        `;
+
         containerElement.appendChild(article);
     }
     

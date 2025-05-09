@@ -421,7 +421,7 @@ circle.selected {
 }
 .stats dt {
   font-weight: 600; /* Semi-bold */
-  color: #000000b1; /* Dark gray-blue */
+  color: #000000b1;
   font-size: 0.7rem; /* Slightly smaller than base */
   margin-bottom: 0.25rem; /* Space between term and definition */
   padding-bottom: 0.25rem; /* Padding for separator */

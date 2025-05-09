@@ -1,76 +1,76 @@
 [
-	{
-		"title": "The Commoditization of Health",
-		"year": 2025,
-		"image":"https://vis-society.github.io/labs/2/images/empty.svg",
-		"description": "DSC106 project 1"
-	},
-	{
-		"title": "The Rise of Keto in the Early 21st Centruy",
-		"year": 2025,
-		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
-		"description": "DSC80 final project"
-	},
-	{
-		"title": "Storm Water Management at UCSD",
-		"year": 2025,
-		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
-		"description": "(SYN2 final project) A proposed solution to on campus flooding using green infrastructure techniques."
-	},
-	{
-		"title": "The Chinese Bull Market of 2024",
-		"year": 2024,
-		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
-		"description": "Exploring the economic environment that lead the bull market in China in late 2024 and hypothesizing about the longevity of the current indicators."
-	},
-	{
-		"title": "Exploring Mei Foo: Personal Memories in a Space of Disapearance",
-		"year": 2024,
-		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
-		"description": "A cultural tour for those interested in cultural studies, sociology, or urban development as well as tourists who want to explore Hong Kong at a deeper level. (https://com15927.wordpress.com/)"
-	},
-	{
-		"title": "Entertainment Database",
-		"year": 2024,
-		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
-		"description": "Aut voluptatem sint atque corrupti accusamus necessitatibus possimus et, itaque nulla id deleniti nemo repellendus asperiores molestias laudantium, mollitia ad dicta. Laboriosam, itaque. Quos corporis, perferendis natus officiis beatae qui.",
-		"description": "Created and optimized a database for events such as concerts, conferences, and fairs at the University of Hong Kong, Hong Kong."
-	},
-	{
-		"title": "WAAC Research Paper",
-		"year": 2024,
-		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
-		"description": "A research paper exploring the Weighted Average Cost of Captial, including visualizations of the effects of the 5, different variables on the final metric."
-	},
-	{
-		"title": "Flamingo Math AI",
-		"year": 2024,
-		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
-		"description": "Worked under Outlier AI to develop a math AI."
-	},
-	{
-		"title": "Dicta nihil odit illo?",
-		"year": 2010,
-		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
-		"description": "Aut voluptatem sint atque corrupti accusamus necessitatibus possimus et, itaque nulla id deleniti nemo repellendus asperiores molestias laudantium, mollitia ad dicta. Laboriosam, itaque. Quos corporis, perferendis natus officiis beatae qui.",
-		"description": "Vitae quos laudantium officiis rerum, accusamus delectus aspernatur quas nulla, magni sed, excepturi saepe incidunt laboriosam alias at aliquam atque quisquam autem nesciunt. Minus, reprehenderit odit nam illo natus aspernatur?"
-	},
-	{
-		"title": "Vel earum nulla facilis.",
-		"year": 2006,
-		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
-		"description": "Aut voluptatem sint atque corrupti accusamus necessitatibus possimus et, itaque nulla id deleniti nemo repellendus asperiores molestias laudantium, mollitia ad dicta. Laboriosam, itaque. Quos corporis, perferendis natus officiis beatae qui."
-	},
-	{
-		"title": "Nobis iste neque quaerat.",
-		"year": 2006,
-		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
-		"description": "Quos, recusandae, sit rerum velit nostrum nihil quisquam tempora repellat sed quibusdam facilis. Assumenda quaerat ab, nesciunt odio facere sit, ipsa necessitatibus tempora, maiores commodi sed quae provident deserunt at?"
-	},
-	{
-		"title": "Iusto, incidunt. Totam, illum.",
-		"year": 2006,
-		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
-		"description": "Tempore, eveniet minus velit, earum aperiam necessitatibus repellendus provident accusamus illum officiis doloribus, eum saepe est aut numquam distinctio pariatur natus totam repellat. Numquam nulla libero sapiente magnam nostrum ex."
-	}
+  {
+    "title": "The Commoditization of Health",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "DSC106 project 1"
+  },
+  {
+    "title": "The Rise of Keto in the Early 21st Centruy",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "DSC80 final project"
+  },
+  {
+    "title": "Storm Water Management at UCSD",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "(SYN2 final project) A proposed solution to on campus flooding using green infrastructure techniques."
+  },
+  {
+    "title": "The Chinese Bull Market of 2024",
+    "year": 2024,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Exploring the economic environment that lead the bull market in China in late 2024 and hypothesizing about the longevity of the current indicators."
+  },
+  {
+    "title": "Exploring Mei Foo: Personal Memories in a Space of Disapearance",
+    "year": 2024,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A cultural tour for those interested in cultural studies, sociology, or urban development as well as tourists who want to explore Hong Kong at a deeper level. (https://com15927.wordpress.com/)"
+  },
+  {
+    "title": "Entertainment Database",
+    "year": 2024,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Aut voluptatem sint atque corrupti accusamus necessitatibus possimus et, itaque nulla id deleniti nemo repellendus asperiores molestias laudantium, mollitia ad dicta. Laboriosam, itaque. Quos corporis, perferendis natus officiis beatae qui.",
+    "description": "Created and optimized a database for events such as concerts, conferences, and fairs at the University of Hong Kong, Hong Kong."
+  },
+  {
+    "title": "WAAC Research Paper",
+    "year": 2024,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A research paper exploring the Weighted Average Cost of Captial, including visualizations of the effects of the 5, different variables on the final metric."
+  },
+  {
+    "title": "Flamingo Math AI",
+    "year": 2024,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Worked under Outlier AI to develop a math AI."
+  },
+  {
+    "title": "Dicta nihil odit illo?",
+    "year": 2010,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Aut voluptatem sint atque corrupti accusamus necessitatibus possimus et, itaque nulla id deleniti nemo repellendus asperiores molestias laudantium, mollitia ad dicta. Laboriosam, itaque. Quos corporis, perferendis natus officiis beatae qui.",
+    "description": "Vitae quos laudantium officiis rerum, accusamus delectus aspernatur quas nulla, magni sed, excepturi saepe incidunt laboriosam alias at aliquam atque quisquam autem nesciunt. Minus, reprehenderit odit nam illo natus aspernatur?"
+  },
+  {
+    "title": "Vel earum nulla facilis.",
+    "year": 2006,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Aut voluptatem sint atque corrupti accusamus necessitatibus possimus et, itaque nulla id deleniti nemo repellendus asperiores molestias laudantium, mollitia ad dicta. Laboriosam, itaque. Quos corporis, perferendis natus officiis beatae qui."
+  },
+  {
+    "title": "Nobis iste neque quaerat.",
+    "year": 2006,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Quos, recusandae, sit rerum velit nostrum nihil quisquam tempora repellat sed quibusdam facilis. Assumenda quaerat ab, nesciunt odio facere sit, ipsa necessitatibus tempora, maiores commodi sed quae provident deserunt at?"
+  },
+  {
+    "title": "Iusto, incidunt. Totam, illum.",
+    "year": 2006,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Tempore, eveniet minus velit, earum aperiam necessitatibus repellendus provident accusamus illum officiis doloribus, eum saepe est aut numquam distinctio pariatur natus totam repellat. Numquam nulla libero sapiente magnam nostrum ex."
+  }
 ]

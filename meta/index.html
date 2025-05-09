@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta</title>
+    <!-- description for this page -->
+    <meta name="description" content="This is a meta page for stats about the code of this website.">
+    <link rel="stylesheet" href="../style.css">
+    </link>
+    <script type="module" src="../global.js"></script>
+    <script type="module" src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Meta</h1>
+        <p>Stats About The Code of This Website:</p>
+    </header>
+
+    <div id="stats"></div>
+
+    <strong>Commits by time of day</strong>
+    <div id="chart"></div>
+
+    <!-- for tooltip -->
+    <dl id="commit-tooltip" class="info tooltip" hidden>
+        <dt>Commit</dt>
+        <dd>
+            <a href="" id="commit-link" target="_blank"></a>
+        </dd>
+
+        <dt>Date</dt>
+        <dd id="commit-date"></dd>
+
+        <!-- Add: Time, author, lines edited -->
+    </dl>
+
+    <p id="selection-count"><strong>No</strong> commits selected <small>(select commits above)</small></p>
+
+    <p id="language-breakdown-title">Language Breakdown:</p>
+    <dl id="language-breakdown" class="stats"></dl>
+
+</body>
+
+</html>

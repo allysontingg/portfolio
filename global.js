@@ -165,7 +165,7 @@ export function renderProjects(
         <${headingLevel}>${project.title}</${headingLevel}>
             <img class="project-image" src="${project.image}" alt="${project.title}">
             <span class="project-year">c. ${project.year}</span>
-            <p>${project.description}</p>
+            <p>${project.description} (<a href="${project.url}" target="_blank">View Project</a>)</p>
         `;
 
     containerElement.appendChild(article);

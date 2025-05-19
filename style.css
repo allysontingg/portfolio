@@ -341,7 +341,7 @@ dl.info {
     margin: 0;
     padding-right: 0.5em;
     /* light grey */
-    color:#666;
+    color: #666;
     /* Make labels less prominent */
     font-weight: normal;
     /* align left */
@@ -360,7 +360,7 @@ dl.info {
     font-size: 0.8em;
     /* Optional: make values stand out more */
   }
-  
+
 }
 
 dl.info[hidden]:not(:hover, :focus-within) {
@@ -378,9 +378,11 @@ dl.info[hidden]:not(:hover, :focus-within) {
 }
 
 circle {
-  transition: 200ms;
+  /* transition: 200ms; */
   transform-origin: center;
   transform-box: fill-box;
+  transition: all 200ms, r calc(var(--r) * 100ms);
+  /* TODO: starting style */
 }
 
 circle:hover {
@@ -390,7 +392,8 @@ circle:hover {
 /* brushing styling */
 @keyframes marching-ants {
   to {
-    stroke-dashoffset: -8; /* 5 + 3 */
+    stroke-dashoffset: -8;
+    /* 5 + 3 */
   }
 }
 
@@ -417,19 +420,158 @@ circle.selected {
   /* font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; Modern system fonts */
   /* display: grid; */
   /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
-  gap: 1rem; /* Space between items */
+  gap: 1rem;
+  /* Space between items */
 }
+
 .stats dt {
-  font-weight: 600; /* Semi-bold */
+  font-weight: 600;
+  /* Semi-bold */
   color: #000000b1;
-  font-size: 0.7rem; /* Slightly smaller than base */
-  margin-bottom: 0.25rem; /* Space between term and definition */
-  padding-bottom: 0.25rem; /* Padding for separator */
-  border-bottom: 1px solid #eaecee; /* Subtle separator */
+  font-size: 0.7rem;
+  /* Slightly smaller than base */
+  margin-bottom: 0.25rem;
+  /* Space between term and definition */
+  padding-bottom: 0.25rem;
+  /* Padding for separator */
+  border-bottom: 1px solid #eaecee;
+  /* Subtle separator */
 }
+
 .stats dd {
-  margin: 0; /* Reset default margin */
-  color: #000000; /* Slightly lighter than dt */
-  font-size: 0.9rem; /* Smaller than term */
-  font-feature-settings: 'tnum'; /* Tabular numbers for alignment */
+  margin: 0;
+  /* Reset default margin */
+  color: #000000;
+  /* Slightly lighter than dt */
+  font-size: 0.9rem;
+  /* Smaller than term */
+  font-feature-settings: 'tnum';
+  /* Tabular numbers for alignment */
+}
+
+/* meta slider styling */
+
+/* styles.css */
+#filter-container {
+  display: flex;
+  align-items: baseline;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+#commit-slider {
+  width: 300px;
+  max-width: 50%;
+}
+
+#filter-label {
+  margin-right: 10px;
+  /* font-weight: bold; */
+}
+
+#time-display {
+  margin-left: auto;
+  font-family: monospace;
+}
+
+/* unit visualization for files */
+
+/* File visualization styles */
+.files>div {
+  /* display: grid; */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  max-width: 100%;
+  justify-content: space-between;
+
+  dt {
+    grid-column: 1;
+    text-align: left;
+    font-size: 0.9em;
+
+    small {
+      font-size: 0.9em;
+      color: #666;
+      font: arial;
+      font-weight: 400;
+    }
+  }
+
+  dd {
+    grid-column: 2;
+    font-size: 0.6em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    align-content: start;
+    gap: 0.15em;
+    padding-top: 0.2em;
+    padding-bottom: 0.4em;
+    margin-left: 0;
+  }
+}
+
+.files {
+  padding: 1em;
+}
+
+.line {
+  display: flex;
+  width: 0.5em;
+  aspect-ratio: 1;
+  background: steelblue;
+  border-radius: 50%;
+}
+
+:global(body) {
+  max-width: min(120ch, 80vw);
+}
+
+/* scrolly styling */
+
+#scrollytelling, #file-race{
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+/* feel free to play with this to make your scrolly more seemless with your plot */
+#scroll-container, #file-scroll-container {
+  grid-column: 1;
+  position: relative;
+  width: 95%;
+  height: 350px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+#chart, .files{
+  grid-column: 2;
+}
+
+#spacer, #file-spacer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: none; /* transparent */
+  pointer-events: none;
+}
+
+#items-container, #file-items-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.item, .file-item {
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #eee;
 }
